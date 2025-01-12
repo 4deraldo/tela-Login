@@ -21,16 +21,20 @@
           ambiente.
         </p>
 
-        <form action="login.php" method="post">
+        <form action="login.php" method="post" autocomplete="on">
           <div>
             <div class="caixa-for1">
-              <i class="material-icons">person</i>
-              <input type="email" name="email" id="iemail" placeholder="seu e-mail" required class="caixa-form2">
+              <label for="iemail">
+                <i class="material-icons">person</i>
+              </label>
+              <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" maxlength="30"
+                required class="caixa-form2">
             </div>
 
             <div class="caixa-for1">
-              <i class="material-icons">key</i>
-              <input type="password" name="senha" id="isenha" placeholder="sua senha" required class="caixa-form2">
+              <label for="isenha"><i class="material-icons">vpn_key</i></label>
+              <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password"
+                minlength="8" maxlength="20" required class="caixa-form2">
             </div>
           </div>
           <div>
