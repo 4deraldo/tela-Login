@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+:root {
+  --cor1: #5f2c82;
+  --cor2: #53aaa7;
+  --cor3: #94cfcd;
+  --cor4: #2d6462;
+  --cor5: #49a09d;
+  --cor6: #fff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background: linear-gradient(to bottom, var(--cor1), var(--cor5));
+  }
+
+  section {
+    width: 80vw;
+  }
+
+  section div#img {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  #caixa {
+    float: right;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background: linear-gradient(to bottom, var(--cor1), var(--cor2));
+  }
+
+  section {
+    width: 90vw;
+    height: 280px;
+  }
+
+  section div#img {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  #caixa {
+    float: right;
+    width: 50%;
+  }
+}
